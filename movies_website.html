@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Movies Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #111;
+      color: #fff;
+    }
+    header {
+      background: #222;
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .movies {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .movie {
+      background: #1c1c1c;
+      padding: 10px;
+      border-radius: 10px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .movie:hover {
+      transform: scale(1.05);
+    }
+    .movie img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .movie h3 {
+      margin: 10px 0;
+    }
+    .btn {
+      display: inline-block;
+      padding: 8px 15px;
+      background: crimson;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .btn:hover {
+      background: darkred;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #222;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>🎬 My Movies Collection 🎬</header>
+
+  <section class="movies">
+    <div class="movie">
+      <img src="https://upload.wikimedia.org/wikipedia/en/9/9a/Trolls_World_Tour_poster.jpg" alt="Movie 1">
+      <h3>Movie Title 1</h3>
+      <a href="https://www.youtube.com/watch?v=abc123" target="_blank" class="btn">Watch Trailer</a>
+    </div>
+
+    <div class="movie">
+      <img src="https://upload.wikimedia.org/wikipedia/en/8/8a/Dune_%282021_film%29.jpg" alt="Movie 2">
+      <h3>Movie Title 2</h3>
+      <a href="https://www.youtube.com/watch?v=xyz456" target="_blank" class="btn">Watch Trailer</a>
+    </div>
+
+    <div class="movie">
+      <img src="https://upload.wikimedia.org/wikipedia/en/f/f9/Avengers_Endgame_poster.jpg" alt="Movie 3">
+      <h3>Movie Title 3</h3>
+      <a href="https://www.youtube.com/watch?v=lmnop789" target="_blank" class="btn">Watch Trailer</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 My Movies Website | Designed by You
+  </footer>
+
+</body>
+</html>
